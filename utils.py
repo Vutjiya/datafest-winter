@@ -7,7 +7,7 @@ from graphviz import Source
 from IPython.display import Image, display
 from matplotlib.axes import Axes
 from matplotlib.colors import ListedColormap, rgb2hex
-from numpy import concatenate, linspace, number, unique, vstack
+from numpy import concatenate, number, unique, vstack
 from numpy.typing import NDArray
 from sklearn.base import ClassifierMixin
 from sklearn.inspection import DecisionBoundaryDisplay
@@ -24,43 +24,37 @@ def view_boundary(
     ax: Axes | None = None,
 ) -> Axes | None:
     n_classes = len(unique(concatenate([y_train, y_test])))
-    base_colors = ["#FF0000", "#0000FF", "#FFFF00"]
 
-    if n_classes <= len(base_colors):
-        colors = base_colors[:n_classes]
+    if n_classes == 2:
+        colors = ["#FF0000", "#0000FF"]
+    elif n_classes == 3:
+        colors = ["tab:blue", "tab:green", "tab:orange"]
     else:
-        cmap = plt.get_cmap("tab10")
-        extra_colors = cmap(linspace(0, 1, n_classes - len(base_colors)))
-        colors = base_colors + [rgb2hex(c) for c in extra_colors]
-
-    cm_bright = ListedColormap(colors)
+        colors = [rgb2hex(plt.get_cmap("tab10")(i)) for i in range(n_classes)]
 
     if ax is None:
         _, ax = plt.subplots()
 
-    disp = DecisionBoundaryDisplay.from_estimator(
-        classifier,
-        vstack([X_train, X_test]),
-        xlabel=r"$x_1$",
-        ylabel=r"$x_2$",
-        cmap=plt.get_cmap("RdBu"),
-        alpha=0.8,
-        ax=ax,
+    kwargs = {
+        "xlabel": r"$x_1$",
+        "ylabel": r"$x_2$",
+        "alpha": 0.8,
+        "ax": ax,
+    }
+
+    if n_classes == 2:
+        kwargs["cmap"] = plt.get_cmap("RdBu")
+    else:
+        kwargs["multiclass_colors"] = colors
+
+    DecisionBoundaryDisplay.from_estimator(
+        classifier, vstack([X_train, X_test]), **kwargs
     )
-    disp.ax_.scatter(
-        X_train[:, 0],
-        X_train[:, 1],
-        c=y_train,
-        cmap=cm_bright,
-        edgecolor="k",
-    )
-    disp.ax_.scatter(
-        X_test[:, 0],
-        X_test[:, 1],
-        c=y_test,
-        cmap=cm_bright,
-        edgecolor="k",
-        alpha=0.6,
+
+    cm_bright = ListedColormap(colors)
+    ax.scatter(X_train[:, 0], X_train[:, 1], c=y_train, cmap=cm_bright, edgecolor="k")
+    ax.scatter(
+        X_test[:, 0], X_test[:, 1], c=y_test, cmap=cm_bright, edgecolor="k", alpha=0.6
     )
     ax.set_title(title)
 
