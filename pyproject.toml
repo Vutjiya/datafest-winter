@@ -3,7 +3,7 @@ name = "datafest-winter"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.13"
 dependencies = [
     "graphviz>=0.21",
     "ipykernel>=7.1.0",
@@ -19,6 +19,4 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = [
-    "ipykernel>=7.1.0",
-]
+dev = ["ipykernel>=7.1.0"]

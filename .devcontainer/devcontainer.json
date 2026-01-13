@@ -1,0 +1,68 @@
+{
+    "name": "ML Module Environment",
+    "build": {
+    "dockerfile": "Dockerfile"
+    },
+    
+    "customizations": {
+        "vscode": {
+        "extensions": [
+            "ms-python.python",
+            // "ms-python.vscode-pylance",
+            "ms-toolsai.jupyter",
+            "charliermarsh.ruff",
+            "astral-sh.ty",
+            "aaron-bond.better-comments",
+            "njpwerner.autodocstring",
+            "dzhavat.bracket-pair-toggler",
+            "naumovs.color-highlight",
+            "usernamehw.errorlens",
+            "oderwat.indent-rainbow",
+            "tamasfe.even-better-toml",
+            "kisstkondoros.vscode-gutter-preview",
+            "yzhang.markdown-all-in-one",
+            "bierner.markdown-checkbox",
+            "bierner.markdown-emoji",
+            "bierner.markdown-footnotes",
+            "bierner.markdown-mermaid",
+            "shd101wyy.markdown-preview-enhanced",
+            "mermaidchart.vscode-mermaid-chart",
+            "christian-kohler.path-intellisense",
+            "kevinrose.vsc-python-indent",
+            "littlefoxteam.vscode-python-test-adapter",
+            "njqdev.vscode-python-typehint",
+            "mechatroner.rainbow-csv",
+            "jgclark.vscode-todo-highlight",
+            "gruntfuggly.todo-tree",
+            "pkief.material-icon-theme"
+        ],
+        "settings": {
+            "editor.formatOnSave": true,
+            "editor.cursorStyle": "block",
+            "editor.lineNumbers": "relative",
+            "editor.guides.bracketPairs": true,
+            "editor.minimap.enabled": false,
+            "editor.bracketPairColorization.enabled": true,
+            "editor.wordWrap": "on",
+            "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+            "workbench.iconTheme": "material-icon-theme",
+            "workbench.editor.empty.hint": "hidden",
+            "python.defaultInterpreterPath": ".venv/bin/python",
+            "python.analysis.typeCheckingMode": "basic",
+            "python.languageServer": "None",
+            "[python]": {
+            "editor.defaultFormatter": "charliermarsh.ruff",
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": "explicit"
+            }
+            },
+            "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+            "errorLens.searchForProblemQuery": "https://google.com/?q=$message"
+        }
+        }
+    },
+
+    "postCreateCommand": "uv sync",
+    
+    "remoteUser": "vscode"
+}
