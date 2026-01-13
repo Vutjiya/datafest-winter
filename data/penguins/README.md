@@ -6,22 +6,22 @@
 
 **Variables**:
 
-| Variable Name | Type | Description |
-| ------------- | ---------- | ------------------------------------------- |
-| `study` | Categorical | Study name identifier |
-| `sample` | Continuous | Sample number |
-| `species` | Categorical | Penguin species (Adelie, Chinstrap, Gentoo) |
-| `region` | Categorical | Region in Palmer Archipelago |
-| `island` | Categorical | Island in Palmer Archipelago (Biscoe, Dream, Torgersen) |
-| `stage` | Categorical | Reproductive stage |
-| `id` | Categorical | Individual penguin ID |
-| `clutch_completion` | Categorical | Clutch completion status |
-| `date_egg` | Continuous | Date egg was laid |
-| `culmen_length` | Continuous | Length of the culmen bill (millimeters) |
-| `culmen_depth` | Continuous | Depth of the culmen bill (millimeters) |
-| `flipper_length` | Continuous | Length of the flipper (millimeters) |
-| `body_mass` | Continuous | Body mass (grams) |
-| `sex` | Categorical | Penguin sex (male, female) |
-| `delta_15_n` | Continuous | Nitrogen isotope ratio $(\delta 15N)$ |
-| `delta_13_c` | Continuous | Carbon isotope ratio $(\delta 13C)$ |
-| `comments` | Categorical | Additional observations or notes |
+| Variable Name       | Type        | Description                                             |
+| ------------------- | ----------- | ------------------------------------------------------- |
+| `study`             | Categorical | Study name identifier                                   |
+| `sample`            | Continuous  | Sample number                                           |
+| `species`           | Categorical | Penguin species (Adelie, Chinstrap, Gentoo)             |
+| `region`            | Categorical | Region in Palmer Archipelago                            |
+| `island`            | Categorical | Island in Palmer Archipelago (Biscoe, Dream, Torgersen) |
+| `stage`             | Categorical | Reproductive stage                                      |
+| `id`                | Categorical | Individual penguin ID                                   |
+| `clutch_completion` | Categorical | Clutch completion status                                |
+| `date_egg`          | Continuous  | Date egg was laid                                       |
+| `culmen_length`     | Continuous  | Length of the culmen bill (millimeters)                 |
+| `culmen_depth`      | Continuous  | Depth of the culmen bill (millimeters)                  |
+| `flipper_length`    | Continuous  | Length of the flipper (millimeters)                     |
+| `body_mass`         | Continuous  | Body mass (grams)                                       |
+| `sex`               | Categorical | Penguin sex (male, female)                              |
+| `delta_15_n`        | Continuous  | Nitrogen isotope ratio $(\delta 15N)$                   |
+| `delta_13_c`        | Continuous  | Carbon isotope ratio $(\delta 13C)$                     |
+| `comments`          | Categorical | Additional observations or notes                        |

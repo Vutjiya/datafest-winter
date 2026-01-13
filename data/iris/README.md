@@ -6,10 +6,10 @@
 
 **Variables**:
 
-| Variable Name | Type | Description |
-| ------------- | ---------- | ------------------------------------------- |
-| `sepal_length` | Continuous | Length of the sepal in centimeters |
-| `sepal_width` | Continuous | Width of the sepal in centimeters |
-| `petal_length` | Continuous | Length of the petal in centimeters |
-| `petal_width` | Continuous | Width of the petal in centimeters |
-| `species` | Categorical | Species of iris flower (setosa, versicolor, virginica) |
+| Variable Name  | Type        | Description                                            |
+| -------------- | ----------- | ------------------------------------------------------ |
+| `sepal_length` | Continuous  | Length of the sepal in centimeters                     |
+| `sepal_width`  | Continuous  | Width of the sepal in centimeters                      |
+| `petal_length` | Continuous  | Length of the petal in centimeters                     |
+| `petal_width`  | Continuous  | Width of the petal in centimeters                      |
+| `species`      | Categorical | Species of iris flower (setosa, versicolor, virginica) |

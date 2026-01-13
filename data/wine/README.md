@@ -6,19 +6,19 @@
 
 **Variables**:
 
-| Variable Name | Type | Description |
-| ------------- | ---------- | ------------------------------------------- |
-| `cultivar` | Categorical | Wine cultivar class (1, 2, or 3) |
-| `alcohol` | Continuous | Alcohol content |
-| `malicacid` | Continuous | Malic acid content |
-| `ash` | Continuous | Ash content |
-| `alcalinity_of_ash` | Continuous | Alcalinity of ash |
-| `magnesium` | Continuous | Magnesium content |
-| `total_phenols` | Continuous | Total phenols content |
-| `flavanoids` | Continuous | Flavanoids content |
-| `nonflavanoid_phenols` | Continuous | Nonflavanoid phenols content |
-| `proanthocyanins` | Continuous | Proanthocyanins content |
-| `color_intensity` | Continuous | Color intensity |
-| `hue` | Continuous | Hue |
-| `od280_od315_diluted` | Continuous | OD280/OD315 of diluted wines |
-| `proline` | Continuous | Proline content |
+| Variable Name          | Type        | Description                      |
+| ---------------------- | ----------- | -------------------------------- |
+| `cultivar`             | Categorical | Wine cultivar class (1, 2, or 3) |
+| `alcohol`              | Continuous  | Alcohol content                  |
+| `malicacid`            | Continuous  | Malic acid content               |
+| `ash`                  | Continuous  | Ash content                      |
+| `alcalinity_of_ash`    | Continuous  | Alcalinity of ash                |
+| `magnesium`            | Continuous  | Magnesium content                |
+| `total_phenols`        | Continuous  | Total phenols content            |
+| `flavanoids`           | Continuous  | Flavanoids content               |
+| `nonflavanoid_phenols` | Continuous  | Nonflavanoid phenols content     |
+| `proanthocyanins`      | Continuous  | Proanthocyanins content          |
+| `color_intensity`      | Continuous  | Color intensity                  |
+| `hue`                  | Continuous  | Hue                              |
+| `od280_od315_diluted`  | Continuous  | OD280/OD315 of diluted wines     |
+| `proline`              | Continuous  | Proline content                  |
