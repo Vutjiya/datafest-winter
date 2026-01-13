@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# macOS system files
+.DS_Store
+
+# Testing
+.pytest_cache/
+
+# IDE
+.vscode/
+*.ipynb_checkpoints/
+
+# Version Control
+.git/
