@@ -8,7 +8,7 @@
 
 | Variable Name                            | Type        | Description                                        |
 | ---------------------------------------- | ----------- | -------------------------------------------------- |
-| `class`                                  | Categorical | Political party affiliation (democrat, republican) |
+| `party`                                  | Categorical | Political party affiliation (democrat, republican) |
 | `handicapped_infants`                    | Categorical | Vote on handicapped infants bill                   |
 | `water_project_cost_sharing`             | Categorical | Vote on water project cost sharing                 |
 | `adoption_of_the_budget_resolution`      | Categorical | Vote on budget resolution adoption                 |

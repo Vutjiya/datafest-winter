@@ -9,7 +9,7 @@
 | Variable Name        | Type        | Description                                                                                  |
 | -------------------- | ----------- | -------------------------------------------------------------------------------------------- |
 | `id`                 | Categorical | Unique identifier for each sample                                                            |
-| `diagnosis`          | Categorical | Diagnosis                                                                                    |
+| `diagnosis`          | Categorical | Diagnosis (M = malignant, B = benign)                                                        |
 | `radius1`            | Continuous  | Mean of distances from center to points on the perimeter                                     |
 | `texture1`           | Continuous  | Standard deviation of gray-scale values                                                      |
 | `perimeter1`         | Continuous  | Mean perimeter                                                                               |
