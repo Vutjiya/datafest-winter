@@ -60,7 +60,7 @@ def plot_boundary(
     return ax
 
 
-def print_decision_tree(decision_tree: DecisionTreeClassifier) -> None:
+def plot_decision_tree(decision_tree: DecisionTreeClassifier) -> None:
     dot_data = export_graphviz(
         decision_tree,
         feature_names=decision_tree.feature_names_in_.tolist(),

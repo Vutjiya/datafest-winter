@@ -27,8 +27,8 @@ def calculate_model_size(
         row = {param: value}
         for model_name, model in models.items():
             fitted_model = model.fit(X, y)
-            size_kb = round(len(dumps(fitted_model)) / 1024, 3)
-            row[model_name.replace("$", "")] = size_kb
+            size = round(len(dumps(fitted_model)) / 1024, 3)
+            row[model_name.replace("$", "")] = size
 
         results.append(row)
     return pl.DataFrame(results)

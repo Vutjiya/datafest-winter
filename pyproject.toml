@@ -1,7 +1,7 @@
 [project]
 name = "datafest-winter"
 version = "0.1.0"
-description = "Add your description here"
+description = "Machine learning educational resources and implementations covering fundamental algorithms including k-NN, decision trees, neural networks, and ensemble methods"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
