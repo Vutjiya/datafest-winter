@@ -1,5 +1,5 @@
 {
-    "name": "ML Module Environment",
+    "name": "ml-notebook-environment",
     "build": {
         "dockerfile": "Dockerfile"
     },
