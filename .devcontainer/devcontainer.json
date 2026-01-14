@@ -3,6 +3,7 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
+    "forwardPorts": [],
     "customizations": {
         "vscode": {
             "extensions": [
@@ -45,6 +46,7 @@
                 "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
                 "workbench.iconTheme": "material-icon-theme",
                 "workbench.editor.empty.hint": "hidden",
+                "remote.autoForwardPorts": false,
                 "python.defaultInterpreterPath": ".venv/bin/python",
                 "python.analysis.typeCheckingMode": "basic",
                 "python.languageServer": "Pylance",
